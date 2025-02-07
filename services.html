@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankush-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .s {
+            color: #fe0000;
+            font: weight 500px;
+            font-size: 25px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .do {
+            color: #ffffff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 40px;
+            grid-gap: 20px;
+            text-align: center;
+            margin: 80px 150px;
+
+        }
+
+        .box1 {
+            border-radius: 5px;
+            align-items: center;
+            background-color: #001c24;
+
+        }
+
+        .bold {
+            color: rgb(180, 250, 250);
+
+            font-size: 25px;
+            font-family: cursive;
+        }
+
+        div p {
+            font-size: 20px;
+            font-family: serif;
+            margin: 20px;
+        }
+
+        div img {
+            align-items: center;
+            margin: 20px;
+            width: 50px;
+        }
+
+        @media only screen and (max-width:950px) {
+            .bold {
+                font-size: 15px;
+            }
+
+            div p {
+                font-size: 12px;
+            }
+        }
+
+        @media only screen and (max-width:800px) {
+            .bold {
+                font-size: 13px;
+            }
+
+            div p {
+                font-size: 10px;
+            }
+
+            div img {
+                width: 35px;
+            }
+
+            .boxes {
+                margin: 40px 75px;
+                ;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            .s {
+                font-size:20px;
+            }
+            .do{
+                font-size: 30px;
+            }
+
+        }
+
+        @media only screen and (max-width:450px) {
+            .s {
+                font-size:15px;
+            }
+            .do{
+                font-size:25px;
+            }
+            .boxes {
+                margin: 20px 35px;
+                ;
+            }
+
+            .bold {
+                font-size: 10px;
+            }
+
+            div p {
+                font-size: 7px;
+            }
+
+            div img {
+                width: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Ankush's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="/index.html"> Home </a></li>
+                    <li> <a href="/about.html"> About </a></li>
+                    <li> <a href="/services.html"> Services </a></li>
+                    <li> <a href="/projects.html"> Projects </a></li>
+                    <li> <a href="/contect.html"> Contact Me </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="s"> Services</div>
+
+        <div class="do">What I Do</div>
+
+        <div class="boxes">
+
+            <div class="box1">
+                <div><img src="logo/globe-solid (1).svg"></div>
+                <b class="bold">Responsive design</b>
+                <p> I will gave a complete responsive website</p>
+            </div>
+
+            <div class="box1">
+                <div><img src="logo/window-maximize-solid.svg"></div>
+                <b class="bold">Web design</b>
+                <p>I will make website for you in minimum price .</p>
+            </div>
+
+            <div class="box1">
+                <div><img src="logo/tablet-screen-button-solid.svg"></div>
+                <b class="bold">Hybrid App Development</b>
+                <p>I will make hybrid Apps which is for both device IOS and ANDROID .</p>
+            </div>
+
+            <div class="box1">
+                <div><img src="logo/broom-solid.svg"></div>
+                <b class="bold">Clean code</b>
+                <p> I will gave a structured code and Clean code with file management.</p>
+            </div>
+
+            <div class="box1">
+                <div><img src="logo/chalkboard-solid.svg"></div>
+                <b class="bold">Teaching</b>
+                <p>I will teach Web Developmet with live classes and in lowest price.</p>
+            </div>
+
+            <div class="box1">
+                <div><img src="logo/phone-solid.svg"></div>
+                <b class="bold">Great Support</b>
+                <p>I will gave 24*7 support if you are join my web development course .</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
