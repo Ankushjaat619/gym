@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankush-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .box1 img {
+            height: 522px;
+        }
+
+        .box1 {
+            border: 2px solid rgb(1, 21, 73);
+            margin-top: 120px;
+            padding: 12px;
+
+        }
+
+        .box2 {
+            margin-left: 85px;
+            font-size: 25px;
+            margin-right: 85px;
+        }
+
+        .about {
+            font-size: 30px;
+            color: #00fff7;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 900;
+           margin-bottom: 12px;
+        }
+
+        button {
+            position: relative;
+            text-align: center;
+            color: #15f4ee;
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 400px;
+            border: 3px solid #00fff7;
+            background-color: #000000;
+            /* color: rgb(0, 247, 255); */
+            padding: 15px 25px;
+            border-radius: 50px;
+
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            transition: 01s linear;
+            box-shadow: 0 2px 1px 0 #15f4ee inset, 0 2px 15px 0 #15f4ee,
+                0 -6px 25px 0 #15f4ee inset, 0 -6px 25px 0 #15f4ee;
+        }
+
+        button a {
+            text-decoration: none;
+            color: rgb(0, 247, 255);
+        }
+
+
+        @media only screen and (max-width:1130px) {
+
+            .container {
+                flex-direction: column;
+            }
+
+            .box2 {
+                margin-top: 50px;
+                margin-bottom: 50px;
+                text-align: center;
+
+
+            }
+
+        }
+
+        @media only screen and (max-width:800px) {
+            .box1 img {
+                height: 400px;
+            }
+
+            .box2 {
+                font-size: 17px;
+            }
+        }
+
+        @media only screen and (max-width:650px) {
+            .box1 img {
+                height: 300px;
+            }
+        }
+
+        @media only screen and (max-width:385px) {
+            .box1 img {
+                height: 200px;
+            }
+        }
+
+        @media only screen and (max-width:500px) {
+            button {
+                font-size: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Ankush's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="/index.html"> Home </a></li>
+                    <li> <a href="/about.html"> About </a></li>
+                    <li> <a href="/services.html"> Services </a></li>
+                    <li> <a href="/projects.html"> Projects </a></li>
+                    <li> <a href="/contect.html"> Contact Me </a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        </div>
+        <div class="box1"><img src="ankush.JPG"> </div>
+
+        <div class="box2">
+            <div class="about">About Me</div>
+            <p>
+                <span>Hi, I am Ankush Ahlawat</span>
+                I am a passionate and detail-oriented web developer with a strong background in designing and building
+                dynamic websites. My goal is to combine functionality with aesthetics, delivering exceptional user
+                experiences. With a deep understanding of industry best practices and emerging trends, I strive to stay
+                at the fore front of web development.
+            </p>
+
+            <button> <a href="">Download CV </a></button>
+            <button> <a href="/contect.html"> Hire Me </a> </button>
+    </main>
+
+</body>
+
+</html>
