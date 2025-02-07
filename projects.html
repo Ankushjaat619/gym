@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankush-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .p {
+            color: #fe0000;
+            font: weight 500px;
+            font-size: 25px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .work {
+            color: #ffffff;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            font-size: 35px;
+            text-align: center;
+        }
+
+        .boxes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 10px 120px;
+            gap: 30px;
+
+        }
+
+        .box {
+            border-radius: 5px;
+            margin: auto;
+            align-items: center;
+            background-color: #011f28;
+            padding: 20px
+        }
+
+        div img {
+            position: relative;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 70vh;
+
+        }
+
+        div h3:hover {
+            color: red;
+            transition: all 1s ease;
+            cursor: pointer;
+        }
+
+        div img:hover {
+            transform: scale(1.1);
+            transition: all 1s ease;
+        }
+        @media only screen and (max-width:1300px){
+            .boxes{
+                margin: 10px 60px;
+            }
+        }
+        @media only screen and (max-width:1200px){
+            .boxes{
+                margin: 10px 20px;
+            }
+        }
+        @media only screen and (max-width:1100px){
+            div img {
+                width: 55vh;
+            }
+        }
+        @media only screen and (max-width:900px){
+            div img {
+                width: 45vh;
+            }
+        }
+        @media only screen and (max-width:750px){
+            div img {
+                width: 35vh;
+            }
+        }
+        @media only screen and (max-width:625px){
+            div img {
+                width: 45vh;
+            }
+            .boxes {
+                display: flex;
+                flex-direction:column;
+            }
+        }
+        @media only screen and (max-width:400px){
+            div img {
+                width: 35vh;
+            }
+        }
+        @media only screen and (max-width:360px){
+            div img {
+                width: 25vh;
+            }
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ankush's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="/index.html"> Home </a></li>
+                    <li> <a href="/about.html"> About </a></li>
+                    <li> <a href="/services.html"> Services </a></li>
+                    <li> <a href="/projects.html"> Projects </a></li>
+                    <li> <a href="/contect.html"> Contact Me </a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="p"> Portfolio</div>
+
+        <div class="work">Latest Works</div>
+
+        <div class="boxes">
+            <div class="box">
+                <div class="img">
+                    <img src="website/Ankush-Portfolio.png" >
+                </div>
+                <h3>Personal Portfolio</h3>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="website/ultra edit.png" >
+                </div>
+                <h3>UltraEdit Clone</h3>
+            </div>
+
+            <div class="box">
+                <div class="img">
+                    <img src="website/netflix.png" >
+                </div>
+                <h3>Netflix Clone</h3>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
